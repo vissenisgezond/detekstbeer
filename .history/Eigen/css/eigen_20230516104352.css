@@ -1,0 +1,615 @@
+body > div.elementor.elementor-14354 > div > div.elementor-section-wrap.elementor-motion-effects-parent > section.elementor-section.elementor-top-section.elementor-element.elementor-element-cc88063.elementor-section-full_width.elementor-section-height-min-height.elementor-section-items-stretch.elementor-section-height-default.elementor-motion-effects-element.elementor-motion-effects-element-type-background
+{
+ height: 100px !important;
+
+}
+body > div.unique-navbar > img {
+  height: 50px;
+  width: 55px;
+}
+
+body > div.unique-navbar > div > i { 
+  font-size: 42px;
+}
+
+
+
+
+/* recent werk modaal*/
+
+#myModal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  width: 50%; /* Set modal width */
+  height: auto; /* Set modal height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  color: white; /* Text color */
+}
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stijl voor ul items in de mobiele navbar */
+.unique-navbar .unique-nav-items li a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Stijl voor e-mail- en WhatsApp-iconen */
+.unique-navbar .unique-email-icon,
+.unique-navbar .unique-whatsapp-icon {
+  color: #007c7c;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 10px;
+  text-decoration: none; }
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border: 3px solid #008080;
+  border-radius: 15px;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.close-button {
+  color: #008080;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #006666;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.unique-navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.unique-navbar h1 {
+  color: white;
+  margin: 0;
+}
+
+.unique-menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.unique-nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.unique-nav-items li {
+  margin: 0 10px;
+}
+
+.unique-nav-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.unique-email-btn,
+.unique-whatsapp-btn {
+  background-color: #008080;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.unique-email-btn:hover,
+.unique-whatsapp-btn:hover {
+  background-color: #006666;
+}
+
+@media screen and (max-width: 767px) {
+  .unique-navbar {
+    background-color: white;
+  }
+  
+  .unique-menu-toggle {
+    display: block;
+    color: #03dac6;
+  }
+
+  .unique-nav-items {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #03dac6;
+    flex-direction: column;
+    color: white !important;
+  }
+
+  .unique-nav-items.show {
+    display: flex;
+    border: 1px solid #007c7c;
+  }
+
+  .unique-nav-items li {
+    margin: 10px;
+  }
+  
+  .unique-nav-items a {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .unique-navbar {
+    display: none;
+  }
+}
+
+
+}
+
+}
+
+
+
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); 
+}
+
+#contact {display: inline-block;     position: relative;
+    left: 14%;
+    bottom: 66px;}
+ #contact h1 {text-align: center;}
+
+ #contact  {border: 1px solid #03DAC6;}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+   
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+
+#laptopbeer {
+    position: relative;
+    z-index: 9999;
+    
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between; /* or any other value that suits your design */
+    align-items: center;
+  }
+  
+  #contact {
+    width: 50%; /* or any other value that suits your design */
+    margin: 0 auto;
+  }
+  
+  .svg-container {
+    width: 50%; /* or any other value that suits your design */
+  }
+  
+  .svg-container svg {
+    float: right; /* or left, depending on where you want it */
+  }
+  
+
+
+  svg#pijl {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    z-index: 9999;
+  }
+  
+  /* Mobiele stijl */
+@media screen and (max-width: 768px) {
+  svg#pijl {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+  #pijl {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #pijl.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+
+ /* body > div.elementor.elementor-14354 > div > div > section.elementor-section.elementor-top-section.elementor-element.elementor-element-6c87ea0.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div.contact-container
+{margin-left: 25%;} */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  background-color: #ffffff;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Add rounded corners to the form container */
+
+}
+
+h1 {
+  color: #008080; /* Turquoise color */
+  margin-bottom: 30px;
+}
+
+.desktop-form {
+  display: block;
+}
+
+.mobile-buttons {
+  display: none;
+}
+
+.email-btn,
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #008080; /* Turquoise color */
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.email-btn:hover,
+.whatsapp-btn:hover {
+  background-color: #006666;
+}
+
+.email-btn i,
+.whatsapp-btn i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .desktop-form {
+    display: none;
+  }
+
+  .mobile-buttons {
+    display: block;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .desktop-form {
+    display: none;
+  }
+
+  .mobile-buttons {
+    display: block;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-svg-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.header-svg {
+  flex: 1;
+  max-width: 50%;
+}
+
+h1 a {
+  color: #008080; /* Torquoise kleur */
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
+.svg-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.kvk-number {
+  font-weight: bold;
+  color: #008080; /* Torquoise kleur */
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 1px 1px 0 rgb(9, 237, 245);
+}
+
+.form-container {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 30px;
+  border-radius: 15px !important; /* Add rounded corners to the form container */
+
+  
+}
+
+.cf {
+  width: 100%;
+}
+
+#input-message {
+  height: 200px;
+}
+
+.form-field input,
+.form-field textarea {
+  border: 3px solid #008080; /* Torquoise border */
+  border-radius: 3px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+#input-submit,
+.whatsapp-btn {
+  background-color: #008080; /* Torquoise background */
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-right: 43px;
+  height: 58px;
+  margin-top: 0px;
+}
+
+#input-submit:hover,
+.whatsapp-btn:hover {
+  background-color: #006666; /* Darker torquoise */
+}
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.fab.fa-whatsapp {
+  margin-right: 5px;
+}
+
+
+  
+/* Voeg deze media query toe aan het einde van je bestaande CSS */
+@media screen and (max-width: 767px) {
+  .desktop-form {
+    display: none;
+  }
+
+  .mobile-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  .email-btn,
+  .whatsapp-btn {
+    margin: 5px;
+  }
+}
+
+
